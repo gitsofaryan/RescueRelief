@@ -49,12 +49,20 @@ body {
   align-items: center;
   gap: 70px;
 }
+.agency-name{
+  margin-top: 30px;
+}
 .agency-name h1{
 width: 500px;
 font-size: 50px;
 }
 .agency-name h3{
   margin: 80px 150px;
+  font-size: 30px;
+  background-color: #bbb;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
 }
 .agency-name p{
 width: 500px;
