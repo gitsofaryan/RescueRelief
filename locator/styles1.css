@@ -9,101 +9,120 @@ html,
 body {
   height: 100%;
   width: 100%;
-  /* background-color: #f0c808; */
+  background-color: #f9f9f9;
+}
+.display {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+}
+.input-search label {
+  font-size: 20px;
+}
+.input-search input {
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: none;
+  color: #ffffff;
+  background-color: #7d575796;
+  margin: 20px;
 }
 
-/* .App{
+.btn {
+  margin: 15px;
+  padding: 5px 100px;
+}
 
-        box-sizing: border-box;
-        flex-shrink: 0;
-        width: 90%;
-        height: 100%;
-        /* height: min-content; 1219px */
-/* display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 100px 100px 100px 100px;
-        background-color: #f0c808;
-        overflow: hidden;
-        position: relative;
-        align-content: center;
-        flex-wrap: nowrap;
-        gap: 40px;
-        border-radius: 0px 0px 0px 0px; */
+.btn button {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+}
+#locationDetails {
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  margin-left: 50px;
+  background-color: aliceblue;
+  box-shadow: 2px 0 2px 4px rgba(197, 72, 72, 0.185);
+  border-radius: 20px;
+}
+.name img {
+  height: 200px;
+  /* border-bottom: 2px solid; */
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.147);
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
 
-/* } */
+#map {
+  height: 500px;
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 2px rgba(82, 51, 51, 0.279);
+}
 
-/* .content{
-    right: 40%;
-    left: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 40px;
-    padding: 0px 0px 0px 0px;
-    background-color: #f0c808;
-    border-radius: 0px 0px 0px 0px;
-} */
-/* 
-.discover{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 60px;
-    padding: 0px 0px 0px 0px;
-    background-color: #f0c808;
-    border-radius: 0px 0px 0px 0px;
-} */
+#placesList {
+  padding: 20px 0;
+  width: 500px;
+  height: 500px;
+  box-shadow: 2px 0 2px 4px rgba(197, 72, 72, 0.185);
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+}
+#placesList::-webkit-scrollbar {
+  display: none;
+}
 
-/* .register{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    /* gap: 60px; */
-/* padding: 0px 0px 0px 0px;
-    background-color: #f0c808;
-    border-radius: 0px 0px 0px 0px; */
-/* }  */
-/* 
-.image1 {
-    height: 150px;
-    display: block;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    mix-blend-mode: luminosity;
-    overflow: hidden;
-    position: relative;
-    aspect-ratio: 1.88 / 1;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-i8bTVj7GaDNPLWGnARv0le14KDE0tg58729klKE_jF5T4kElbepZ2NK5AWyyKwRxqo&usqp=CAU");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 335px;
-  }
- */
-/* 
-  .image2{
-    height: 150px;
-    display: block;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    mix-blend-mode: luminosity;
-    overflow: hidden;
-    position: relative;
-    aspect-ratio: 1.88 / 1;
-    background-image: url("https://capstonefire.com/wp-content/uploads/2018/04/csr-6-848x450-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 335px;
-  }
-  */
+#placesList ul {
+  padding: 5px 30px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+#placesList ul::-webkit-scrollbar {
+  display: none;
+}
+#placesList ul > li {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+#placeNameInside {
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: none;
+  background-color: #ccc;
+  margin: 20px;
+}
+#searchInsideBtn {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+}

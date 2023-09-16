@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="styles1.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Alkatra&family=Caprasimo&family=Dancing+Script:wght@700&family=Lugrasimo&family=Open+Sans:ital,wght@1,800&family=Preahvihear&family=Ubuntu:wght@500&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Alkatra&family=Caprasimo&family=Dancing+Script:wght@700&family=Lugrasimo&family=Open+Sans:ital,wght@1,800&family=Preahvihear&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
 
-<body>
-    <!-- <main class="App">
-        <div class="content">
-            <div class="discover">
-                <a class="image1" href="/Agencies/Agencies.html"></a>
-                <div class="written">
-
-                    <h1>Discover Rescue Relief Agencies During Calamities</h1>
-                    <p>The Relief Agency Locator is the ultimate platform to find and connect with rescue agencies
-                        during natural and man-made calamities. Get real-time locations of nearby aid organizations, so
-                        you can stay informed and prepared.</p>
-                </div>
-            </div>
-            <div class="register">
-                <div class="written">
-
-                    <h1>Register Your Agency and Make a Difference</h1>
-                    <p>Become a part of our growing network of rescue relief agencies. Register your organization today and join forces with other heroes in times of crisis. Together, we make the world a safer place!</p>
-                    </div>
-                    <a class="image2" href="/Auth/Authentication.html">
-
-                    </a>
-            </div>
+  <body>
+    <div class="display">
+      <div id="locationDetails">
+        <h2>Location Details</h2>
+        <p id="placeNameDetails"></p>
+        <p id="cityDetails"></p>
+        <p id="distanceDetails"></p>
+        <p id="otherDetails"></p>
+      </div>
+      <div class="name">
+        <img
+          src="https://o.remove.bg/downloads/4416abd6-ce0b-46a0-b645-e6867d74e9a3/image-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="search">
+        <div class="input-search">
+          <label for="placeName">Enter a Place Name:</label><br />
+          <input type="text" id="placeName" />
         </div>
-    </main> -->
-
-</body>
-
+        <div class="btn">
+          <button id="searchPlacesBtn">Search Places</button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container2">
+      <div id="map"></div>
+      <div id="placesList">
+        <h2>Nearby Places</h2>
+        <ul id="placesUL"></ul>
+        <h2>Search Places Inside</h2>
+        <input type="text" id="placeNameInside" />
+        <button id="searchInsideBtn">Search Inside</button>
+        <ul id="insidePlacesUL"></ul>
+      </div>
+    </div>
+    <script src="locator.js"></script>
+  </body>
 </html>
