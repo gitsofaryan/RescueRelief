@@ -1,24 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Alkatra', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alkatra", cursive;
 }
 
-html,body{
-    height: 100%;
-    width: 100%;
-    background-color: #F0C808;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f0c808;
 }
 
-.App{
+/* .App{
 
         box-sizing: border-box;
         flex-shrink: 0;
         width: 90%;
         height: 100%;
         /* height: min-content; 1219px */
-        display: flex;
+/* display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -29,12 +30,11 @@ html,body{
         align-content: center;
         flex-wrap: nowrap;
         gap: 40px;
-        border-radius: 0px 0px 0px 0px;
+        border-radius: 0px 0px 0px 0px; */
 
-}
+/* } */
 
-
-.content{
+/* .content{
     right: 40%;
     left: 50%;
     height: 100%;
@@ -46,8 +46,8 @@ html,body{
     padding: 0px 0px 0px 0px;
     background-color: #f0c808;
     border-radius: 0px 0px 0px 0px;
-}
-
+} */
+/* 
 .discover{
     width: 100%;
     height: 100%;
@@ -59,10 +59,9 @@ html,body{
     padding: 0px 0px 0px 0px;
     background-color: #f0c808;
     border-radius: 0px 0px 0px 0px;
-}
+} */
 
-
-.register{
+/* .register{
     width: 100%;
     height: 100%;
     display: flex;
@@ -70,11 +69,11 @@ html,body{
     justify-content: flex-start;
     align-items: center;
     /* gap: 60px; */
-    padding: 0px 0px 0px 0px;
+/* padding: 0px 0px 0px 0px;
     background-color: #f0c808;
-    border-radius: 0px 0px 0px 0px;
-}
-
+    border-radius: 0px 0px 0px 0px; */
+/* }  */
+/* 
 .image1 {
     height: 150px;
     display: block;
@@ -90,8 +89,8 @@ html,body{
     background-position: center;
     border-radius: 335px;
   }
-
-
+ */
+/* 
   .image2{
     height: 150px;
     display: block;
@@ -107,6 +106,4 @@ html,body{
     background-position: center;
     border-radius: 335px;
   }
-
-
-  
+  */
