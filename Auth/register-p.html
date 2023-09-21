@@ -9,18 +9,15 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
   </head>
 
   <body>
     <div
       class="w-[100vw] h-[100vh] flex items-center justify-center overflow-hidden"
-      style="
-        height: 100vh;
-        background: #F8F8F8;
-      "
+      style="height: 100vh; background: #f8f8f8"
     >
-    <!-- linear-gradient(71deg, #feaf00 19.35%, #f8d442 90.12%) -->
+      <!-- linear-gradient(71deg, #feaf00 19.35%, #f8d442 90.12%) -->
       <div
         class="bg-white p-4 rounded-2xl w-[500px] shadow-slate-400"
         style="width: 500px; box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2)"
@@ -34,52 +31,58 @@
         <div>
           <form>
             <div class="flex flex-col my-3">
-              <label for="name" class="text-gray-700">Name</label>
+              <label for="name" class="text-gray-700">Organization Name</label>
               <input
+                id="organization-name"
                 type="text"
                 id="name"
                 class="border rounded px-4 py-2 w-full text-sm outline-none mt-2"
-                placeholder="enter your name"
+                placeholder="Enter your organization name"
               />
             </div>
             <div class="flex flex-col my-3">
               <label for="email" class="text-gray-700">Email</label>
               <input
+                id="email"
                 type="text"
                 id="email"
                 class="border rounded px-4 py-2 w-full text-sm outline-none mt-2"
-                placeholder="enter your email"
+                placeholder="Enter your email"
               />
             </div>
             <div class="flex flex-col my-3">
               <label for="name" class="text-gray-700">Domain</label>
               <input
+                id="domain"
                 type="text"
                 id="name"
                 class="border rounded px-4 py-2 w-full text-sm outline-none mt-2"
-                placeholder="enter your domain(ex: fire)"
+                placeholder="Enter your domain(ex: fire)"
               />
             </div>
             <div class="flex flex-col my-3">
               <label for="name" class="text-gray-700">Location</label>
               <input
+                id="location"
                 type="text"
                 id="name"
                 class="border rounded px-4 py-2 w-full text-sm outline-none mt-2"
-                placeholder="enter your Location"
+                placeholder="Enter your Location"
               />
             </div>
             <div class="flex flex-col my-3">
               <label for="contact" class="text-gray-700">Contact</label>
               <input
+                id="contact"
                 type="text"
                 id="contact"
                 class="border rounded px-4 py-2 w-full text-sm outline-none mt-2"
-                placeholder="enter your contact number"
+                placeholder="Enter your contact number"
               />
             </div>
             <div class="flex flex-col my-3 mt-8">
               <a
+                id="registerButton"
                 href="/Agencies/Agencies.html"
                 class="w-full text-center text-white py-2"
                 style="background-color: #feaf00"
@@ -90,5 +93,14 @@
         </div>
       </div>
     </div>
+    <div id="alertModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+      <div class="bg-black text-white p-4 rounded-xl w-[400px]">
+          <p class="text-xl font-semibold">Alert Sent</p>
+          <p>Your alert has been sent successfully.</p>
+          <button id="closeAlertButton" class="mt-4 text-sm text-gray-600 hover:text-gray-900 underline">Close</button>
+      </div>
+  </div>
+</div>
+    <script src="register.js"></script>
   </body>
 </html>

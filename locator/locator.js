@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Search places inside a location
   const searchInsideBtn = document.getElementById("searchInsideBtn");
-  const placeTypeInput = document.getElementById("placeType");
+  const placeTypeInput = document.getElementById("placeNameInside");
   const insidePlacesUL = document.getElementById("insidePlacesUL");
 
   searchInsideBtn.addEventListener("click", function () {
