@@ -1,3 +1,4 @@
+// Get a reference to the "Register" button
 const registerButton = document.querySelector("#registerButton");
 
 // Add a click event listener to the "Register" button
@@ -7,7 +8,7 @@ registerButton.addEventListener("click", function (event) {
   // Get the input values from the registration form
   const organizationName = document.querySelector("#organization-name").value;
   const email = document.querySelector("#email").value;
-//   const ndrfId = document.querySelector("#ndrf-id").value;
+  const ndrfId = document.querySelector("#ndrf-id").value;
   const location = document.querySelector("#location").value;
   const contact = document.querySelector("#contact").value;
   const domain = document.querySelector("#domain").value;
@@ -46,11 +47,11 @@ registerButton.addEventListener("click", function (event) {
 
 ////////////////////alert/////////////////////////////
 
-const alert = document.querySelector("#alert");
+// const alert = document.querySelector("#alert");
 
-alert.addEventListener("click", ()=>{
-  alert.log("Alert sent");
-})
+// alert.addEventListener("click", ()=>{
+//   alert.log("Alert sent");
+// })
 
 // Get references to the "Send alert" button and the modal elements
 const sendAlertButton = document.querySelectorAll(".send-alert-button");
