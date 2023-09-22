@@ -30,7 +30,7 @@ body {
 }
 .header h1 {
   font-family: monospace;
-  letter-spacing: 30px;
+  letter-spacing: 10px;
   font-size: 35px;
 }
 .img {
@@ -243,7 +243,7 @@ img {
 
 .group-2{
   /* margin-right: auto; */
-  margin-left: 700px;
+  margin-left: 680px;
 }
 
 ul {
