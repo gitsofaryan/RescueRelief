@@ -50,7 +50,7 @@ body {
 .container {
   display: flex;
   align-items: center;
-  gap: 70px;
+  gap: 40px;
 }
 .agency-name {
   margin-top: 70px;
