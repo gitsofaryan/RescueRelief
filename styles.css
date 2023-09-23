@@ -34,8 +34,8 @@ body {
   font-size: 35px;
 }
 .img {
-  width: 40px;
-  height: 40px;
+  width: 200px;
+  height: 120px;
   border-radius: 50%;
 }
 
@@ -45,7 +45,7 @@ body {
   display: flex; /* Display heading and menu items in a row */
   justify-content: space-between; /* Space between heading and menu items */
   align-items: center; /* Center vertically */
-  padding: 20px; /* Add padding for spacing */
+  padding: 10px 20px; /* Add padding for spacing */
 }
 .container {
   display: flex;
@@ -315,7 +315,7 @@ li {
 
 
 .footer {
-  background-color: #414141;
+  background-color: #bba838fd;
   width: 100%;
   text-align: left;
   font-family: sans-serif;
@@ -383,7 +383,7 @@ li {
 }
 
 .footer .footer-center i {
-  background-color: #33383b;
+  background-color: #33383b43;
   color: #ffffff;
   font-size: 25px;
   width: 38px;
